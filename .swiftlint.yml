@@ -1,0 +1,22 @@
+disabled_rules:
+    - colon
+    - comma
+    - control_statement
+    - trailing_whitespace
+    - multiple_closures_with_trailing_closure
+    - identifier_name
+    - opening_brace
+    - file_length
+    - type_name
+opt_in_rules:
+    - empty_count
+excluded:
+    - Carthage
+    - Pods
+
+line_length:
+    warning: 220
+    error: 240
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
+

@@ -12,7 +12,9 @@
 		BC2EAD6025BC8453004AB5D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD5F25BC8453004AB5D8 /* Assets.xcassets */; };
 		BC2EAD6325BC8453004AB5D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD6225BC8453004AB5D8 /* Preview Assets.xcassets */; };
 		BC2EAD6825BC8453004AB5D8 /* Dash_Monkey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC2EAD6625BC8453004AB5D8 /* Dash_Monkey.xcdatamodeld */; };
-		BC2EAD7425BC8626004AB5D8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BC2EAD7325BC8626004AB5D8 /* SwiftPackageProductDependency */; };
+		BC2EAD7425BC8626004AB5D8 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = BC2EAD7325BC8626004AB5D8 /* Neumorphic */; };
+		BC2EAD8225BC985F004AB5D8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */; };
+		BC2EAD8D25BC99FD004AB5D8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */; };
 		D94DF7F8B7414ACD7C065F15 /* Pods_Dash_Monkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139717369839A5FE5CB3295A /* Pods_Dash_Monkey.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		BC2EAD6225BC8453004AB5D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC2EAD6725BC8453004AB5D8 /* Dash_Monkey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dash_Monkey.xcdatamodel; sourceTree = "<group>"; };
 		BC2EAD6925BC8453004AB5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC2EAD7425BC8626004AB5D8 /* BuildFile in Frameworks */,
+				BC2EAD7425BC8626004AB5D8 /* Neumorphic in Frameworks */,
 				D94DF7F8B7414ACD7C065F15 /* Pods_Dash_Monkey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +57,8 @@
 		BC2EAD4F25BC8452004AB5D8 = {
 			isa = PBXGroup;
 			children = (
+				BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */,
+				BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */,
 				BC2EAD5A25BC8452004AB5D8 /* Dash Monkey */,
 				BC2EAD5925BC8452004AB5D8 /* Products */,
 				E6A891556625690849EFE9F6 /* Pods */,
@@ -95,7 +101,6 @@
 				6AA3CE354A8A8991490E8C89 /* Pods-Dash Monkey.debug.xcconfig */,
 				B4E72BDCED8CA085800CCA3C /* Pods-Dash Monkey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +116,7 @@
 				BC2EAD5525BC8452004AB5D8 /* Frameworks */,
 				BC2EAD5625BC8452004AB5D8 /* Resources */,
 				397A28C2C203AA0F3977E6EF /* [CP] Embed Pods Frameworks */,
+				BC2EAD8425BC98AE004AB5D8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -118,7 +124,7 @@
 			);
 			name = "Dash Monkey";
 			packageProductDependencies = (
-				BC2EAD7325BC8626004AB5D8 /* SwiftPackageProductDependency */,
+				BC2EAD7325BC8626004AB5D8 /* Neumorphic */,
 			);
 			productName = "Dash Monkey";
 			productReference = BC2EAD5825BC8452004AB5D8 /* Dash Monkey.app */;
@@ -148,7 +154,7 @@
 			);
 			mainGroup = BC2EAD4F25BC8452004AB5D8;
 			packageReferences = (
-				BC2EAD7225BC8626004AB5D8 /* RemoteSwiftPackageReference */,
+				BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */,
 			);
 			productRefGroup = BC2EAD5925BC8452004AB5D8 /* Products */;
 			projectDirPath = "";
@@ -164,7 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2EAD8225BC985F004AB5D8 /* .swiftlint.yml in Resources */,
 				BC2EAD6325BC8453004AB5D8 /* Preview Assets.xcassets in Resources */,
+				BC2EAD8D25BC99FD004AB5D8 /* .travis.yml in Resources */,
 				BC2EAD6025BC8453004AB5D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +218,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BC2EAD8425BC98AE004AB5D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -413,7 +438,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BC2EAD7225BC8626004AB5D8 /* RemoteSwiftPackageReference */ = {
+		BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/costachung/neumorphic/";
 			requirement = {
@@ -424,9 +449,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BC2EAD7325BC8626004AB5D8 /* SwiftPackageProductDependency */ = {
+		BC2EAD7325BC8626004AB5D8 /* Neumorphic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC2EAD7225BC8626004AB5D8 /* RemoteSwiftPackageReference */;
+			package = BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */;
 			productName = Neumorphic;
 		};
 /* End XCSwiftPackageProductDependency section */
