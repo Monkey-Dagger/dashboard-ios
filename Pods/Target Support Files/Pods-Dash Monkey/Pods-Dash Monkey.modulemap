@@ -1,0 +1,6 @@
+framework module Pods_Dash_Monkey {
+  umbrella header "Pods-Dash Monkey-umbrella.h"
+
+  export *
+  module * { export * }
+}

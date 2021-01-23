@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10676603DCE15A75F60E1637923670C6 /* NeuUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF965361197C92B3E2130B6568A446 /* NeuUIHelper.swift */; };
+		149858C8507036EEB104EE7765A9B385 /* UIView+Neu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5BACC3513186697DE6CC4AD1D3D7B7 /* UIView+Neu.swift */; };
+		1CF719D4E2B40C1D68FA01EB9EED547B /* synth-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ED4FF900F31AAC8733E621760EF074 /* synth-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28CADEEA1D6135CC58453F980510563D /* Pods-Dash Monkey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494241F6C5E9D397666574C924578ED /* Pods-Dash Monkey-dummy.m */; };
+		2E5228A9101B39121252C129B5EFB0B6 /* synth-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE47BFF5AA77444EACA45A438C52434F /* synth-ios-dummy.m */; };
+		511A11792636E65DEF3CE2B6825C8101 /* NeuUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D80E3026AC7E5E9EFEE8DE961BB18 /* NeuUtils.swift */; };
+		5955AC80309DE13ED4667666B2E45C91 /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276AA3B07FFA590D2D97B8700E638AD8 /* CALayer+Shadow.swift */; };
+		61F9CE1EBA2392366C887914E86153F8 /* NeuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F19BB5E97A3C74C1BF03CD8989749 /* NeuView.swift */; };
+		845D9E78F82116379B928C0C4AAE1113 /* Pods-Dash Monkey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 673EE569FD06222619190717DF05F31A /* Pods-Dash Monkey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AFB3A1C9E5B58D200F08DC0FC7C4093 /* UIColor+NearColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DBA1DC831AC96B39BE1ECF04E46BCB /* UIColor+NearColor.swift */; };
+		9621C94C9BE31A12CD63FB015CFA5C61 /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B933C72CCD8645D51C71A3593E9DEA26 /* UIView+Blur.swift */; };
+		A5DE54F6BFDC0612EBDD3D2264047BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B365B0A8DDBE4573B9FD758CA7A9889F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C1252CED78A6E4CA9AD0E9B334773628 /* NeuButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64EDE0B3F49D91583DFDF3428241C17 /* NeuButtonContent.swift */; };
+		C81C6C98A72FDBA19BA8537ED04F39D9 /* UIButton+Neu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE9E29621165C321E576B8913803D0 /* UIButton+Neu.swift */; };
+		CD352DED9D9B3F196F0E1E7683B0630B /* NeuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FF21F4982CD8F579F048E488EC4386 /* NeuConstants.swift */; };
+		E522C60F44066978CD68399FE2968FF6 /* NeuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0670B8D5EEA8656165C46DE5CD0CCF4 /* NeuButtonView.swift */; };
+		F279ACB4D4CDA5581D3F3045B3155E04 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2EB12E1A6A31CE4508EA7A92ABCFDE /* UIColor+Hex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC1D8F4E5BCEE28685F3747DC7D0CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7409E46A9162B323DC50F32BBA8CA9;
+			remoteInfo = "synth-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B8C439826EAE6045E1A4C4BBF692BB /* Pods-Dash Monkey-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dash Monkey-acknowledgements.plist"; sourceTree = "<group>"; };
+		06500417F24F2FEAD419F36D3AAE7AB0 /* Pods-Dash Monkey-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dash Monkey-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1494241F6C5E9D397666574C924578ED /* Pods-Dash Monkey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dash Monkey-dummy.m"; sourceTree = "<group>"; };
+		276AA3B07FFA590D2D97B8700E638AD8 /* CALayer+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Shadow.swift"; path = "Synth/Source/Extensions/CALayer+Shadow.swift"; sourceTree = "<group>"; };
+		3A59FE1E9A07A2BE7328808EF1FFAA43 /* synth-ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "synth-ios-prefix.pch"; sourceTree = "<group>"; };
+		3E2EB12E1A6A31CE4508EA7A92ABCFDE /* UIColor+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "Synth/Source/Extensions/UIColor+Hex.swift"; sourceTree = "<group>"; };
+		414CBF8ED442C8F0A3C0D1ADF53C6514 /* Pods-Dash Monkey-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dash Monkey-frameworks.sh"; sourceTree = "<group>"; };
+		60ED4FF900F31AAC8733E621760EF074 /* synth-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "synth-ios-umbrella.h"; sourceTree = "<group>"; };
+		673EE569FD06222619190717DF05F31A /* Pods-Dash Monkey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dash Monkey-umbrella.h"; sourceTree = "<group>"; };
+		6994DD8DCD9F79420B0DE5628A9DD28A /* Pods-Dash Monkey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dash Monkey.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		848D6F9165FA11B3CC70184C973AEAAD /* synth-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "synth-ios.release.xcconfig"; sourceTree = "<group>"; };
+		873B3FFDC9D89CCBDCCF718989F654D1 /* Pods-Dash Monkey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dash Monkey.release.xcconfig"; sourceTree = "<group>"; };
+		8D51E96983CAC901239455137ABC6C44 /* Pods_Dash_Monkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dash_Monkey.framework; path = "Pods-Dash Monkey.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93327548211CBFD25F27CB146246CD7D /* Pods-Dash Monkey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dash Monkey.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE5BACC3513186697DE6CC4AD1D3D7B7 /* UIView+Neu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Neu.swift"; path = "Synth/Source/Extensions/UIView+Neu.swift"; sourceTree = "<group>"; };
+		B0670B8D5EEA8656165C46DE5CD0CCF4 /* NeuButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuButtonView.swift; path = Synth/Source/NeuButtonView.swift; sourceTree = "<group>"; };
+		B0FF21F4982CD8F579F048E488EC4386 /* NeuConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuConstants.swift; path = Synth/Source/NeuConstants.swift; sourceTree = "<group>"; };
+		B4FF965361197C92B3E2130B6568A446 /* NeuUIHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuUIHelper.swift; path = Synth/Source/NeuUIHelper.swift; sourceTree = "<group>"; };
+		B51A1E435AD9183D6E53B2D33621D4E7 /* Synth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Synth.framework; path = "synth-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B933C72CCD8645D51C71A3593E9DEA26 /* UIView+Blur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Blur.swift"; path = "Synth/Source/Extensions/UIView+Blur.swift"; sourceTree = "<group>"; };
+		C3DBA1DC831AC96B39BE1ECF04E46BCB /* UIColor+NearColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+NearColor.swift"; path = "Synth/Source/Extensions/UIColor+NearColor.swift"; sourceTree = "<group>"; };
+		C68A2C989E03237C16EC69A57D4D85F9 /* Pods-Dash Monkey-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dash Monkey-Info.plist"; sourceTree = "<group>"; };
+		DE47BFF5AA77444EACA45A438C52434F /* synth-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "synth-ios-dummy.m"; sourceTree = "<group>"; };
+		DF8D80E3026AC7E5E9EFEE8DE961BB18 /* NeuUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuUtils.swift; path = Synth/Source/NeuUtils.swift; sourceTree = "<group>"; };
+		E01F70793B6306C10FC11AD9DE128A43 /* synth-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "synth-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D7DEA9DA7876153613EEB76CDE40B1 /* synth-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "synth-ios.modulemap"; sourceTree = "<group>"; };
+		E64EDE0B3F49D91583DFDF3428241C17 /* NeuButtonContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuButtonContent.swift; path = Synth/Source/NeuButtonContent.swift; sourceTree = "<group>"; };
+		E79F19BB5E97A3C74C1BF03CD8989749 /* NeuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuView.swift; path = Synth/Source/NeuView.swift; sourceTree = "<group>"; };
+		EB3ADE1183115EADB03F041E2DBC16B3 /* synth-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "synth-ios-Info.plist"; sourceTree = "<group>"; };
+		FCBE9E29621165C321E576B8913803D0 /* UIButton+Neu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Neu.swift"; path = "Synth/Source/Extensions/UIButton+Neu.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24AC7850C8C02878DB8B4D2265B1C7E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B365B0A8DDBE4573B9FD758CA7A9889F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DC46D34766629FE6F71BF8E84B057B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE54F6BFDC0612EBDD3D2264047BF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58D1FD8B61A9BCB22BBEE65C4CD9E631 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B1436CF5916B1D039154B630228CD6D /* synth-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B1436CF5916B1D039154B630228CD6D /* synth-ios */ = {
+			isa = PBXGroup;
+			children = (
+				276AA3B07FFA590D2D97B8700E638AD8 /* CALayer+Shadow.swift */,
+				E64EDE0B3F49D91583DFDF3428241C17 /* NeuButtonContent.swift */,
+				B0670B8D5EEA8656165C46DE5CD0CCF4 /* NeuButtonView.swift */,
+				B0FF21F4982CD8F579F048E488EC4386 /* NeuConstants.swift */,
+				B4FF965361197C92B3E2130B6568A446 /* NeuUIHelper.swift */,
+				DF8D80E3026AC7E5E9EFEE8DE961BB18 /* NeuUtils.swift */,
+				E79F19BB5E97A3C74C1BF03CD8989749 /* NeuView.swift */,
+				FCBE9E29621165C321E576B8913803D0 /* UIButton+Neu.swift */,
+				3E2EB12E1A6A31CE4508EA7A92ABCFDE /* UIColor+Hex.swift */,
+				C3DBA1DC831AC96B39BE1ECF04E46BCB /* UIColor+NearColor.swift */,
+				B933C72CCD8645D51C71A3593E9DEA26 /* UIView+Blur.swift */,
+				AE5BACC3513186697DE6CC4AD1D3D7B7 /* UIView+Neu.swift */,
+				94008491CAFB828915D44765AE75E017 /* Support Files */,
+			);
+			name = "synth-ios";
+			path = "synth-ios";
+			sourceTree = "<group>";
+		};
+		76D1ACEC703D1CF4F2225817AE495DD0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				809C342CE89A717A333870A13D888222 /* Pods-Dash Monkey */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		809C342CE89A717A333870A13D888222 /* Pods-Dash Monkey */ = {
+			isa = PBXGroup;
+			children = (
+				6994DD8DCD9F79420B0DE5628A9DD28A /* Pods-Dash Monkey.modulemap */,
+				06500417F24F2FEAD419F36D3AAE7AB0 /* Pods-Dash Monkey-acknowledgements.markdown */,
+				03B8C439826EAE6045E1A4C4BBF692BB /* Pods-Dash Monkey-acknowledgements.plist */,
+				1494241F6C5E9D397666574C924578ED /* Pods-Dash Monkey-dummy.m */,
+				414CBF8ED442C8F0A3C0D1ADF53C6514 /* Pods-Dash Monkey-frameworks.sh */,
+				C68A2C989E03237C16EC69A57D4D85F9 /* Pods-Dash Monkey-Info.plist */,
+				673EE569FD06222619190717DF05F31A /* Pods-Dash Monkey-umbrella.h */,
+				93327548211CBFD25F27CB146246CD7D /* Pods-Dash Monkey.debug.xcconfig */,
+				873B3FFDC9D89CCBDCCF718989F654D1 /* Pods-Dash Monkey.release.xcconfig */,
+			);
+			name = "Pods-Dash Monkey";
+			path = "Target Support Files/Pods-Dash Monkey";
+			sourceTree = "<group>";
+		};
+		8C70DF7B8A23CC557B81994017663970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D51E96983CAC901239455137ABC6C44 /* Pods_Dash_Monkey.framework */,
+				B51A1E435AD9183D6E53B2D33621D4E7 /* Synth.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94008491CAFB828915D44765AE75E017 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7DEA9DA7876153613EEB76CDE40B1 /* synth-ios.modulemap */,
+				DE47BFF5AA77444EACA45A438C52434F /* synth-ios-dummy.m */,
+				EB3ADE1183115EADB03F041E2DBC16B3 /* synth-ios-Info.plist */,
+				3A59FE1E9A07A2BE7328808EF1FFAA43 /* synth-ios-prefix.pch */,
+				60ED4FF900F31AAC8733E621760EF074 /* synth-ios-umbrella.h */,
+				E01F70793B6306C10FC11AD9DE128A43 /* synth-ios.debug.xcconfig */,
+				848D6F9165FA11B3CC70184C973AEAAD /* synth-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/synth-ios";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				58D1FD8B61A9BCB22BBEE65C4CD9E631 /* Pods */,
+				8C70DF7B8A23CC557B81994017663970 /* Products */,
+				76D1ACEC703D1CF4F2225817AE495DD0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57ABBD650C90B280BB51A62BDD51F994 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF719D4E2B40C1D68FA01EB9EED547B /* synth-ios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC940F8A79A2BAB71809621C95DCB59B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845D9E78F82116379B928C0C4AAE1113 /* Pods-Dash Monkey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AC7409E46A9162B323DC50F32BBA8CA9 /* synth-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87EAD825933F3CC56E3B9B0DC6F83E5E /* Build configuration list for PBXNativeTarget "synth-ios" */;
+			buildPhases = (
+				57ABBD650C90B280BB51A62BDD51F994 /* Headers */,
+				A7130C306C6BE5740F0FE7A75918383F /* Sources */,
+				E6DC46D34766629FE6F71BF8E84B057B /* Frameworks */,
+				2535EECB7B7550432CE1774D76C4F771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "synth-ios";
+			productName = "synth-ios";
+			productReference = B51A1E435AD9183D6E53B2D33621D4E7 /* Synth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B74E13F8DC7B87B9BBCD99C1DDF73228 /* Pods-Dash Monkey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6AA4C26ABC872CC9E66EEAA281B2EFD /* Build configuration list for PBXNativeTarget "Pods-Dash Monkey" */;
+			buildPhases = (
+				FC940F8A79A2BAB71809621C95DCB59B /* Headers */,
+				7317541E59F2B47941428709591AC3E8 /* Sources */,
+				24AC7850C8C02878DB8B4D2265B1C7E4 /* Frameworks */,
+				1BD0EB620F95243BACAB3BFB4C9C9E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CBD03C9753CF1053425C675C159BA48 /* PBXTargetDependency */,
+			);
+			name = "Pods-Dash Monkey";
+			productName = "Pods-Dash Monkey";
+			productReference = 8D51E96983CAC901239455137ABC6C44 /* Pods_Dash_Monkey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8C70DF7B8A23CC557B81994017663970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B74E13F8DC7B87B9BBCD99C1DDF73228 /* Pods-Dash Monkey */,
+				AC7409E46A9162B323DC50F32BBA8CA9 /* synth-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BD0EB620F95243BACAB3BFB4C9C9E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2535EECB7B7550432CE1774D76C4F771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7317541E59F2B47941428709591AC3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CADEEA1D6135CC58453F980510563D /* Pods-Dash Monkey-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7130C306C6BE5740F0FE7A75918383F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5955AC80309DE13ED4667666B2E45C91 /* CALayer+Shadow.swift in Sources */,
+				C1252CED78A6E4CA9AD0E9B334773628 /* NeuButtonContent.swift in Sources */,
+				E522C60F44066978CD68399FE2968FF6 /* NeuButtonView.swift in Sources */,
+				CD352DED9D9B3F196F0E1E7683B0630B /* NeuConstants.swift in Sources */,
+				10676603DCE15A75F60E1637923670C6 /* NeuUIHelper.swift in Sources */,
+				511A11792636E65DEF3CE2B6825C8101 /* NeuUtils.swift in Sources */,
+				61F9CE1EBA2392366C887914E86153F8 /* NeuView.swift in Sources */,
+				2E5228A9101B39121252C129B5EFB0B6 /* synth-ios-dummy.m in Sources */,
+				C81C6C98A72FDBA19BA8537ED04F39D9 /* UIButton+Neu.swift in Sources */,
+				F279ACB4D4CDA5581D3F3045B3155E04 /* UIColor+Hex.swift in Sources */,
+				8AFB3A1C9E5B58D200F08DC0FC7C4093 /* UIColor+NearColor.swift in Sources */,
+				9621C94C9BE31A12CD63FB015CFA5C61 /* UIView+Blur.swift in Sources */,
+				149858C8507036EEB104EE7765A9B385 /* UIView+Neu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CBD03C9753CF1053425C675C159BA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "synth-ios";
+			target = AC7409E46A9162B323DC50F32BBA8CA9 /* synth-ios */;
+			targetProxy = 3FC1D8F4E5BCEE28685F3747DC7D0CBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28672ED832F5A8EDE7CF697C63B1EEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01F70793B6306C10FC11AD9DE128A43 /* synth-ios.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/synth-ios/synth-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/synth-ios/synth-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/synth-ios/synth-ios.modulemap";
+				PRODUCT_MODULE_NAME = Synth;
+				PRODUCT_NAME = Synth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		617ED6D2963042CA7BA9422A5FB7BCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873B3FFDC9D89CCBDCCF718989F654D1 /* Pods-Dash Monkey.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61B6A14ABD1936EBAF63645993B45194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93327548211CBFD25F27CB146246CD7D /* Pods-Dash Monkey.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9623B240D7941078DC8188F1E94BB79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848D6F9165FA11B3CC70184C973AEAAD /* synth-ios.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/synth-ios/synth-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/synth-ios/synth-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/synth-ios/synth-ios.modulemap";
+				PRODUCT_MODULE_NAME = Synth;
+				PRODUCT_NAME = Synth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87EAD825933F3CC56E3B9B0DC6F83E5E /* Build configuration list for PBXNativeTarget "synth-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28672ED832F5A8EDE7CF697C63B1EEF6 /* Debug */,
+				9623B240D7941078DC8188F1E94BB79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6AA4C26ABC872CC9E66EEAA281B2EFD /* Build configuration list for PBXNativeTarget "Pods-Dash Monkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B6A14ABD1936EBAF63645993B45194 /* Debug */,
+				617ED6D2963042CA7BA9422A5FB7BCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
