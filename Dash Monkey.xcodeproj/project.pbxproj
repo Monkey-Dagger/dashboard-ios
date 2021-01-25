@@ -15,6 +15,7 @@
 		BC2EAD7425BC8626004AB5D8 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = BC2EAD7325BC8626004AB5D8 /* Neumorphic */; };
 		BC2EAD8225BC985F004AB5D8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */; };
 		BC2EAD8D25BC99FD004AB5D8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */; };
+		BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040BB25BF5A9D00D5A940 /* HomeView.swift */; };
 		D94DF7F8B7414ACD7C065F15 /* Pods_Dash_Monkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139717369839A5FE5CB3295A /* Pods_Dash_Monkey.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		BC2EAD6925BC8453004AB5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		BCF040BB25BF5A9D00D5A940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,9 @@
 		BC2EAD5A25BC8452004AB5D8 /* Dash Monkey */ = {
 			isa = PBXGroup;
 			children = (
+				BC837D6B25BF3F4700B97A79 /* Views */,
+				BC837D6925BF3F2900B97A79 /* ViewModels */,
+				BC837D6825BF3F1300B97A79 /* Models */,
 				BC2EAD5B25BC8452004AB5D8 /* Dash_MonkeyApp.swift */,
 				BC2EAD5D25BC8452004AB5D8 /* ContentView.swift */,
 				BC2EAD5F25BC8453004AB5D8 /* Assets.xcassets */,
@@ -93,6 +98,28 @@
 				BC2EAD6225BC8453004AB5D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC837D6825BF3F1300B97A79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC837D6925BF3F2900B97A79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC837D6B25BF3F4700B97A79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF040BB25BF5A9D00D5A940 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E6A891556625690849EFE9F6 /* Pods */ = {
@@ -245,6 +272,7 @@
 			files = (
 				BC2EAD5E25BC8452004AB5D8 /* ContentView.swift in Sources */,
 				BC2EAD6825BC8453004AB5D8 /* Dash_Monkey.xcdatamodeld in Sources */,
+				BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */,
 				BC2EAD5C25BC8452004AB5D8 /* Dash_MonkeyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
