@@ -7,5 +7,8 @@ target 'Dash Monkey' do
 
   # Pods for Dash Monkey
   pod 'synth-ios'
-
+  pod 'Alamofire'
+  pod 'lottie-ios'
+  pod 'SDWebImageSwiftUI'
+  pod 'TrustWalletCore'
 end

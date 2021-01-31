@@ -1,16 +1,46 @@
 PODS:
+  - Alamofire (5.4.1)
+  - lottie-ios (3.1.9)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+  - SDWebImageSwiftUI (1.5.0):
+    - SDWebImage (~> 5.7)
+  - SwiftProtobuf (1.15.0)
   - synth-ios (1.0.0)
+  - TrustWalletCore (2.5.6):
+    - TrustWalletCore/Core (= 2.5.6)
+  - TrustWalletCore/Core (2.5.6):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (2.5.6):
+    - SwiftProtobuf
 
 DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - SDWebImageSwiftUI
   - synth-ios
+  - TrustWalletCore
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - lottie-ios
+    - SDWebImage
+    - SDWebImageSwiftUI
+    - SwiftProtobuf
     - synth-ios
+    - TrustWalletCore
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  SDWebImageSwiftUI: 43687ffe232ddd33fe0659498b7ca9884fdd6b35
+  SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
   synth-ios: b91d9176ecc7ff791d94df9aedafbf5a8c00f965
+  TrustWalletCore: 77ed44e6965e5121245d7fafc58c56a03bf13490
 
-PODFILE CHECKSUM: ca95f1e97386c27c2ace911f88684ecd221a8273
+PODFILE CHECKSUM: 3a88f2e7dc09e73661a4ba9500373b0d900dd936
 
 COCOAPODS: 1.10.1

@@ -15,7 +15,18 @@
 		BC2EAD7425BC8626004AB5D8 /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = BC2EAD7325BC8626004AB5D8 /* Neumorphic */; };
 		BC2EAD8225BC985F004AB5D8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */; };
 		BC2EAD8D25BC99FD004AB5D8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */; };
+		BC40F4E925C2F068009D4FA9 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC40F4E825C2F068009D4FA9 /* WalletView.swift */; };
+		BC7CDEDD25C086D500D47C59 /* monkeyTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7CDEDC25C086D500D47C59 /* monkeyTwo.json */; };
+		BC7CDEE025C087D400D47C59 /* monkeyThree.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7CDEDF25C087D400D47C59 /* monkeyThree.json */; };
+		BCCF501325C455C300008B11 /* CurrencySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF501225C455C300008B11 /* CurrencySelectView.swift */; };
 		BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040BB25BF5A9D00D5A940 /* HomeView.swift */; };
+		BCF040C125C0508C00D5A940 /* spotPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040C025C0508C00D5A940 /* spotPricesView.swift */; };
+		BCF040C425C05E5500D5A940 /* SpotPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040C325C05E5500D5A940 /* SpotPriceModel.swift */; };
+		BCF040CA25C0602700D5A940 /* SpotPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040C925C0602700D5A940 /* SpotPriceViewModel.swift */; };
+		BCF040D125C0654300D5A940 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040D025C0654300D5A940 /* Globals.swift */; };
+		BCF040D925C0708A00D5A940 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040D825C0708A00D5A940 /* LottieView.swift */; };
+		BCF040DC25C07AA600D5A940 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040DB25C07AA600D5A940 /* TabView.swift */; };
+		BCF040FA25C0837F00D5A940 /* monkey.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF040F925C0837F00D5A940 /* monkey.json */; };
 		D94DF7F8B7414ACD7C065F15 /* Pods_Dash_Monkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139717369839A5FE5CB3295A /* Pods_Dash_Monkey.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +43,18 @@
 		BC2EAD6925BC8453004AB5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2EAD8125BC985F004AB5D8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC2EAD8C25BC99FD004AB5D8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		BC40F4E825C2F068009D4FA9 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		BC7CDEDC25C086D500D47C59 /* monkeyTwo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkeyTwo.json; sourceTree = "<group>"; };
+		BC7CDEDF25C087D400D47C59 /* monkeyThree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkeyThree.json; sourceTree = "<group>"; };
+		BCCF501225C455C300008B11 /* CurrencySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectView.swift; sourceTree = "<group>"; };
 		BCF040BB25BF5A9D00D5A940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BCF040C025C0508C00D5A940 /* spotPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotPricesView.swift; sourceTree = "<group>"; };
+		BCF040C325C05E5500D5A940 /* SpotPriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPriceModel.swift; sourceTree = "<group>"; };
+		BCF040C925C0602700D5A940 /* SpotPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPriceViewModel.swift; sourceTree = "<group>"; };
+		BCF040D025C0654300D5A940 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		BCF040D825C0708A00D5A940 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		BCF040DB25C07AA600D5A940 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		BCF040F925C0837F00D5A940 /* monkey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkey.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +106,12 @@
 				BC837D6825BF3F1300B97A79 /* Models */,
 				BC2EAD5B25BC8452004AB5D8 /* Dash_MonkeyApp.swift */,
 				BC2EAD5D25BC8452004AB5D8 /* ContentView.swift */,
+				BCF040DE25C07EEF00D5A940 /* Lottie */,
 				BC2EAD5F25BC8453004AB5D8 /* Assets.xcassets */,
 				BC2EAD6925BC8453004AB5D8 /* Info.plist */,
 				BC2EAD6625BC8453004AB5D8 /* Dash_Monkey.xcdatamodeld */,
 				BC2EAD6125BC8453004AB5D8 /* Preview Content */,
+				BCF040D025C0654300D5A940 /* Globals.swift */,
 			);
 			path = "Dash Monkey";
 			sourceTree = "<group>";
@@ -103,6 +127,7 @@
 		BC837D6825BF3F1300B97A79 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCF040C325C05E5500D5A940 /* SpotPriceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +135,7 @@
 		BC837D6925BF3F2900B97A79 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BCF040C925C0602700D5A940 /* SpotPriceViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -118,8 +144,23 @@
 			isa = PBXGroup;
 			children = (
 				BCF040BB25BF5A9D00D5A940 /* HomeView.swift */,
+				BCCF501225C455C300008B11 /* CurrencySelectView.swift */,
+				BCF040C025C0508C00D5A940 /* spotPricesView.swift */,
+				BCF040D825C0708A00D5A940 /* LottieView.swift */,
+				BCF040DB25C07AA600D5A940 /* TabView.swift */,
+				BC40F4E825C2F068009D4FA9 /* WalletView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF040DE25C07EEF00D5A940 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				BC7CDEDF25C087D400D47C59 /* monkeyThree.json */,
+				BC7CDEDC25C086D500D47C59 /* monkeyTwo.json */,
+				BCF040F925C0837F00D5A940 /* monkey.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		E6A891556625690849EFE9F6 /* Pods */ = {
@@ -198,6 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2EAD8225BC985F004AB5D8 /* .swiftlint.yml in Resources */,
+				BC7CDEDD25C086D500D47C59 /* monkeyTwo.json in Resources */,
+				BC7CDEE025C087D400D47C59 /* monkeyThree.json in Resources */,
+				BCF040FA25C0837F00D5A940 /* monkey.json in Resources */,
 				BC2EAD6325BC8453004AB5D8 /* Preview Assets.xcassets in Resources */,
 				BC2EAD8D25BC99FD004AB5D8 /* .travis.yml in Resources */,
 				BC2EAD6025BC8453004AB5D8 /* Assets.xcassets in Resources */,
@@ -270,10 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF040DC25C07AA600D5A940 /* TabView.swift in Sources */,
+				BCF040CA25C0602700D5A940 /* SpotPriceViewModel.swift in Sources */,
+				BC40F4E925C2F068009D4FA9 /* WalletView.swift in Sources */,
 				BC2EAD5E25BC8452004AB5D8 /* ContentView.swift in Sources */,
+				BCF040C425C05E5500D5A940 /* SpotPriceModel.swift in Sources */,
+				BCCF501325C455C300008B11 /* CurrencySelectView.swift in Sources */,
 				BC2EAD6825BC8453004AB5D8 /* Dash_Monkey.xcdatamodeld in Sources */,
+				BCF040C125C0508C00D5A940 /* spotPricesView.swift in Sources */,
 				BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */,
+				BCF040D925C0708A00D5A940 /* LottieView.swift in Sources */,
 				BC2EAD5C25BC8452004AB5D8 /* Dash_MonkeyApp.swift in Sources */,
+				BCF040D125C0654300D5A940 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

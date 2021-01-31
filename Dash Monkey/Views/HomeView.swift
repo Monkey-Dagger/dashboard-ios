@@ -11,21 +11,11 @@ import Synth
 struct HomeView: View {
     @State var search = ""
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var searchTitle = "btc"
+    @State var searchTitle = "btc,eth"
+    @ObservedObject var spotPriceVM = SpotPriceViewModel()
+    @State var selectedCurrency = 0
     
-    func changeSearch(title: String) -> String {
-        
-        if title == "" {
-            return "b"
-        } else if title == "b" {
-            return "bt"
-        } else if title == "bt" {
-            return "btc"
-        } else {
-            return ""
-        }
-        
-    }
+    @State var ShowCurrencySelectView = false
     
     var body: some View {
         GeometryReader { geo in
@@ -34,37 +24,66 @@ struct HomeView: View {
                     .ignoresSafeArea(.all)
                 
                 VStack(alignment: .leading) {
-                    Text("spot prices,")
-                        .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
-                        .font(.system(size: 18, design: .monospaced))
-                        .fontWeight(.bold)
-                        .padding(.leading, geo.size.width * 0.06)
-                        .padding(.top)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("spot prices,")
+                                .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
+                                .font(.system(size: 18, design: .monospaced))
+                                .fontWeight(.bold)
+                                .padding(.leading, geo.size.width * 0.06)
+                                .padding(.top)
+                            
+                            Text("please specify a ticker")
+                                .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
+                                .font(.system(size: 18, design: .monospaced))
+                                .fontWeight(.bold)
+                                .padding(.leading, geo.size.width * 0.06)
+                            
+                            Text("if not specified all the tokens \nwill be shown")
+                                .foregroundColor(Color(#colorLiteral(red: 0.4594413638, green: 0.4790457487, blue: 0.4829743505, alpha: 1)))
+                                .font(.system(size: 14, design: .monospaced))
+                                .fontWeight(.medium)
+                                .padding(.leading, geo.size.width * 0.06)
+                                .padding(.top, 5)
+                        }
+                        Spacer()
                     
-                    Text("please specify a ticker")
-                        .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
-                        .font(.system(size: 18, design: .monospaced))
-                        .fontWeight(.bold)
-                        .padding(.leading, geo.size.width * 0.06)
-                    
-                    Text("if not specified all the tokens \nwill be shown")
-                        .foregroundColor(Color(#colorLiteral(red: 0.4594413638, green: 0.4790457487, blue: 0.4829743505, alpha: 1)))
-                        .font(.system(size: 14, design: .monospaced))
-                        .fontWeight(.medium)
-                        .padding(.leading, geo.size.width * 0.06)
-                        .padding(.top, 5)
+                        VStack {
+                            
+                            Button(action: {
+                                self.ShowCurrencySelectView.toggle()
+                            }) {
+                                ZStack {
+                                    Circle()
+                                        .foregroundColor(Color(NeuUtils.baseColor))
+                                        .blur(radius: 4)
+                                    
+                                    Circle()
+                                        .fill(LinearGradient(gradient: Gradient(colors: [neuDarkColor, neuLightColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                        .blur(radius: 2)
+
+                                    Text("\(currency[selectedCurrency][1])")
+                                        .gradientForeground(colors: [Color(#colorLiteral(red: 1, green: 0.6853195493, blue: 0.5029885547, alpha: 1)), Color(#colorLiteral(red: 0.6673402371, green: 0.4177823495, blue: 0.216229177, alpha: 1))])
+                                        .font(.system(size: 22))
+                                        
+                                }
+                                .frame(width: geo.size.height * 0.06, height: geo.size.height * 0.06)
+                            }.sheet(isPresented: $ShowCurrencySelectView) {
+                                CurrencySelectView(selectedCurrency: $selectedCurrency, spotPriceVM: spotPriceVM, search: $search)
+                            }
+                            
+                        }
+                        .padding(.trailing, geo.size.width * 0.05)
+                        
+                    }
                     
                     TextField(searchTitle, text: $search)
-                        .onReceive(timer, perform: { _ in
-                            searchTitle = changeSearch(title: searchTitle)
-                            if search != "" {
-                                timer.upstream.connect().cancel()
-                            }
-                        })
-                        .foregroundColor(Color(#colorLiteral(red: 0.2324362993, green: 0.2710780203, blue: 0.2916917801, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.4053344131, green: 0.4760627747, blue: 0.5181590915, alpha: 1)))
                         .padding(.leading, geo.size.width * 0.06)
                         .font(.system(size: 28, weight: .heavy, design: .monospaced))
                         .hoverEffect()
+                    
+                    spotPricesView(spotPriceVM: spotPriceVM)
 
                     Spacer()
                         
@@ -76,6 +95,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(spotPriceVM: SpotPriceViewModel())
     }
 }

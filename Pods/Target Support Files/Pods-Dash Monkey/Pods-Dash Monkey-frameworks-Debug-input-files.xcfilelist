@@ -1,2 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework
+${BUILT_PRODUCTS_DIR}/TrustWalletCore/WalletCore.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
 ${BUILT_PRODUCTS_DIR}/synth-ios/Synth.framework
