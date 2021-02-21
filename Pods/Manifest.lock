@@ -1,9 +1,9 @@
 PODS:
   - Alamofire (5.4.1)
-  - lottie-ios (3.1.9)
-  - SDWebImage (5.10.2):
-    - SDWebImage/Core (= 5.10.2)
-  - SDWebImage/Core (5.10.2)
+  - lottie-ios (3.2.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - SDWebImageSwiftUI (1.5.0):
     - SDWebImage (~> 5.7)
   - SwiftProtobuf (1.15.0)
@@ -34,8 +34,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
-  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  lottie-ios: b6b911246246a90a1d25e7388afe6d9ef003d293
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SDWebImageSwiftUI: 43687ffe232ddd33fe0659498b7ca9884fdd6b35
   SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
   synth-ios: b91d9176ecc7ff791d94df9aedafbf5a8c00f965

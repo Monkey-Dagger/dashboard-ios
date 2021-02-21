@@ -11,7 +11,6 @@ import Synth
 
 struct TabView: View {
     @State var selectedTab = 0
-    var textColor = Color(UIColor(red: 249.0/255.0, green: 211.0/255.0, blue: 180.0/255.0, alpha: 0.9))
     var neuDarkColor = Color(UIColor(red: 21.0/255.0, green: 24.0/255.0, blue: 26.0/255.0, alpha: 1.0)) // Neu original 212426
     var neuLightColor = Color(UIColor(red: 21.0/255.0, green: 24.0/255.0, blue: 26.0/255.0, alpha: 0.5))
     let impactSoft = UIImpactFeedbackGenerator(style: .medium)

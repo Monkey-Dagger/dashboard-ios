@@ -27,16 +27,14 @@ struct HomeView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text("spot prices,")
-                                .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
-                                .font(.system(size: 18, design: .monospaced))
-                                .fontWeight(.bold)
+                                .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
+                                .font(.system(size: 18, weight: .bold, design: .monospaced))
                                 .padding(.leading, geo.size.width * 0.06)
                                 .padding(.top)
                             
                             Text("please specify a ticker")
-                                .foregroundColor(Color(#colorLiteral(red: 0.7991705537, green: 0.8040333986, blue: 0.8125162125, alpha: 1)))
-                                .font(.system(size: 18, design: .monospaced))
-                                .fontWeight(.bold)
+                                .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
+                                .font(.system(size: 18, weight: .bold, design: .monospaced))
                                 .padding(.leading, geo.size.width * 0.06)
                             
                             Text("if not specified all the tokens \nwill be shown")

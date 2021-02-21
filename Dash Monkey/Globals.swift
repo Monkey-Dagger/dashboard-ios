@@ -16,6 +16,8 @@ var neuDarkColor = Color(UIColor(red: 21.0/255.0, green: 24.0/255.0, blue: 26.0/
 var neuLightColor = Color(UIColor(red: 21.0/255.0, green: 24.0/255.0, blue: 26.0/255.0, alpha: 0.5))
 var neuColor = Color(NeuUtils.baseColor)
 
+let textColor = Color(UIColor(red: 249.0/255.0, green: 211.0/255.0, blue: 180.0/255.0, alpha: 0.9))
+
 var currency = [["USD", "$", "dollarsign"], ["CAD", "$", "dollarsign"],
                 ["EUR", "€", "eurosign"], ["SGD", "$", "dollarsign"],
                 ["INR", "₹", "indianrupeesign"], ["JPY", "¥", "yensign"],
