@@ -8,21 +8,21 @@ Modules ::
 > Covalent
 
 - Address manager
-  [ ] add and store addresses
-  [ ] display all balances
-  [ ] display all transactions
-  [ ] display token transfers
-  [ ] display nft
+[ ] add and store addresses
+[ ] display all balances
+[ ] display all transactions
+[ ] display token transfers
+[ ] display nft
 
 - Power User
-  [ ] display block info
-  [ ] display token holders and delta
-  [ ] *display log events*
+[ ] display block info
+[ ] display token holders and delta
+[ ] *display log events*
 
 - Pricing
-  [ ] display all spot prices
-  [ ] display historical daily chart
-  [ ] display one day volatility
+[ ] display all spot prices
+[ ] display historical daily chart
+[ ] display one day volatility
 
 
 > Binance
