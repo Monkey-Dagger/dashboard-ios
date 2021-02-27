@@ -12,4 +12,5 @@ struct Wallet: Codable, Hashable, Identifiable {
     var id = UUID()
     var name: String
     var address: String
+    var chainId: Int
 }

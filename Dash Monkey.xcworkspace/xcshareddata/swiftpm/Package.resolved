@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "SwiftUICharts",
+        "repositoryURL": "https://github.com/AppPear/ChartView",
+        "state": {
+          "branch": "master",
+          "revision": "08f0053b164f05ccbdb7153b1b3b10b565e8f1f1",
+          "version": null
+        }
+      },
+      {
         "package": "Neumorphic",
         "repositoryURL": "https://github.com/costachung/neumorphic/",
         "state": {

@@ -13,7 +13,7 @@ struct WalletView: View {
     @State var showAddWallet = false
     
     @State var addresses: [Wallet] = []
-    
+        
     var body: some View {
         NavigationView {
             ZStack {
@@ -70,7 +70,9 @@ struct WalletView: View {
                             Group {
                                 ScrollView {
                                     ForEach(addresses, id: \.id) { wallet in
-                                        AddressElement(name: wallet.name, address: wallet.address, width: geo.size.width, height: geo.size.height)
+                                        NavigationLink(destination: WalletAssetView(wallet: wallet)) {
+                                            AddressElement(name: wallet.name, address: wallet.address, width: geo.size.width, height: geo.size.height)
+                                        }
                                     }
                                 }
                             }

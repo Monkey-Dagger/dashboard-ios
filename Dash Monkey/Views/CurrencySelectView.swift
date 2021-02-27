@@ -63,7 +63,6 @@ struct CurrencySelectView: View {
                         }
                     }
                     .padding(.horizontal, geo.size.width * 0.05)
-                    
                 }
             }
         }

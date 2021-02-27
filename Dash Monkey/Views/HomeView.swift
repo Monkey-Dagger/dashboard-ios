@@ -13,8 +13,8 @@ struct HomeView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var searchTitle = "btc,eth"
     @ObservedObject var spotPriceVM = SpotPriceViewModel()
-    @State var selectedCurrency = 0
     
+    @State var selectedCurrency = 0
     @State var ShowCurrencySelectView = false
     
     var body: some View {

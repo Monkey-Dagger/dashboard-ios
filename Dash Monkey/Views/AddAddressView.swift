@@ -151,7 +151,7 @@ struct AddAddressView: View {
                             HStack {
                                 Spacer()
                                 Button(action: {
-                                    let data = Wallet(name: name, address: address)
+                                    let data = Wallet(name: name, address: address, chainId: chain)
                                     addresses.append(data)
                                     presentationMode.wrappedValue.dismiss()
                                 }) {

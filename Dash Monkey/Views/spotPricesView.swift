@@ -17,12 +17,21 @@ struct spotPricesView: View {
     var neuLightColor = Color(UIColor(red: 21.0/255.0, green: 24.0/255.0, blue: 26.0/255.0, alpha: 0.5))
     var threeRowGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
+    @State var showChart = false
+    
     var body: some View {
         GeometryReader { geo in
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: threeRowGrid ) {
                     ForEach(spotPriceVM.spotTokens, id: \.self) { token in
-                        PriceView(token: token, height: geo.size.height, width: geo.size.width)
+                        Button(action: {
+                            showChart = true
+                        }){
+                            PriceView(token: token, height: geo.size.height, width: geo.size.width)
+                        }
+                        .sheet(isPresented: $showChart) {
+                            ChartView(data: [0.00])
+                        }
                     }
                 }
             }

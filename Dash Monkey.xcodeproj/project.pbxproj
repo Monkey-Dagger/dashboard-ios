@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1720AF25E27A400026BEE4 /* WalletAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720AE25E27A400026BEE4 /* WalletAssetView.swift */; };
+		BC1720B225E281970026BEE4 /* WalletSpotAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720B125E281970026BEE4 /* WalletSpotAssetView.swift */; };
+		BC1720B525E281CC0026BEE4 /* WalletSpotAssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720B425E281CC0026BEE4 /* WalletSpotAssetViewModel.swift */; };
+		BC1720B825E281FB0026BEE4 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720B725E281FB0026BEE4 /* BalanceModel.swift */; };
+		BC1720BB25E283250026BEE4 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720BA25E283250026BEE4 /* ErrorModel.swift */; };
+		BC1720BE25E294150026BEE4 /* FiatSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720BD25E294150026BEE4 /* FiatSelectView.swift */; };
+		BC1720C225E2AB1D0026BEE4 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = BC1720C125E2AB1D0026BEE4 /* SwiftUICharts */; };
+		BC1720C525E2AB770026BEE4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720C425E2AB770026BEE4 /* ChartView.swift */; };
+		BC1720C825E2B3BB0026BEE4 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1720C725E2B3BB0026BEE4 /* ChartViewModel.swift */; };
 		BC2EAD5C25BC8452004AB5D8 /* Dash_MonkeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EAD5B25BC8452004AB5D8 /* Dash_MonkeyApp.swift */; };
 		BC2EAD5E25BC8452004AB5D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EAD5D25BC8452004AB5D8 /* ContentView.swift */; };
 		BC2EAD6025BC8453004AB5D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2EAD5F25BC8453004AB5D8 /* Assets.xcassets */; };
@@ -36,6 +45,14 @@
 		139717369839A5FE5CB3295A /* Pods_Dash_Monkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dash_Monkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA3CE354A8A8991490E8C89 /* Pods-Dash Monkey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dash Monkey.debug.xcconfig"; path = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey.debug.xcconfig"; sourceTree = "<group>"; };
 		B4E72BDCED8CA085800CCA3C /* Pods-Dash Monkey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dash Monkey.release.xcconfig"; path = "Target Support Files/Pods-Dash Monkey/Pods-Dash Monkey.release.xcconfig"; sourceTree = "<group>"; };
+		BC1720AE25E27A400026BEE4 /* WalletAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAssetView.swift; sourceTree = "<group>"; };
+		BC1720B125E281970026BEE4 /* WalletSpotAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSpotAssetView.swift; sourceTree = "<group>"; };
+		BC1720B425E281CC0026BEE4 /* WalletSpotAssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSpotAssetViewModel.swift; sourceTree = "<group>"; };
+		BC1720B725E281FB0026BEE4 /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		BC1720BA25E283250026BEE4 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		BC1720BD25E294150026BEE4 /* FiatSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatSelectView.swift; sourceTree = "<group>"; };
+		BC1720C425E2AB770026BEE4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BC1720C725E2B3BB0026BEE4 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		BC2EAD5825BC8452004AB5D8 /* Dash Monkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dash Monkey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EAD5B25BC8452004AB5D8 /* Dash_MonkeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dash_MonkeyApp.swift; sourceTree = "<group>"; };
 		BC2EAD5D25BC8452004AB5D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1720C225E2AB1D0026BEE4 /* SwiftUICharts in Frameworks */,
 				BC2EAD7425BC8626004AB5D8 /* Neumorphic in Frameworks */,
 				D94DF7F8B7414ACD7C065F15 /* Pods_Dash_Monkey.framework in Frameworks */,
 			);
@@ -132,6 +150,8 @@
 			children = (
 				BCF040C325C05E5500D5A940 /* SpotPriceModel.swift */,
 				BCF2170525E1C7FC00D88066 /* Wallet.swift */,
+				BC1720B725E281FB0026BEE4 /* BalanceModel.swift */,
+				BC1720BA25E283250026BEE4 /* ErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				BCF040C925C0602700D5A940 /* SpotPriceViewModel.swift */,
+				BC1720B425E281CC0026BEE4 /* WalletSpotAssetViewModel.swift */,
+				BC1720C725E2B3BB0026BEE4 /* ChartViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -148,12 +170,16 @@
 			isa = PBXGroup;
 			children = (
 				BCF040BB25BF5A9D00D5A940 /* HomeView.swift */,
+				BC1720C425E2AB770026BEE4 /* ChartView.swift */,
 				BCCF501225C455C300008B11 /* CurrencySelectView.swift */,
+				BC1720BD25E294150026BEE4 /* FiatSelectView.swift */,
 				BCF040C025C0508C00D5A940 /* spotPricesView.swift */,
 				BCF040D825C0708A00D5A940 /* LottieView.swift */,
 				BCF040DB25C07AA600D5A940 /* TabView.swift */,
 				BC40F4E825C2F068009D4FA9 /* WalletView.swift */,
+				BC1720AE25E27A400026BEE4 /* WalletAssetView.swift */,
 				BCFDEE6725C878E700CACCED /* AddAddressView.swift */,
+				BC1720B125E281970026BEE4 /* WalletSpotAssetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +225,7 @@
 			name = "Dash Monkey";
 			packageProductDependencies = (
 				BC2EAD7325BC8626004AB5D8 /* Neumorphic */,
+				BC1720C125E2AB1D0026BEE4 /* SwiftUICharts */,
 			);
 			productName = "Dash Monkey";
 			productReference = BC2EAD5825BC8452004AB5D8 /* Dash Monkey.app */;
@@ -229,6 +256,7 @@
 			mainGroup = BC2EAD4F25BC8452004AB5D8;
 			packageReferences = (
 				BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */,
+				BC1720C025E2AB1D0026BEE4 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = BC2EAD5925BC8452004AB5D8 /* Products */;
 			projectDirPath = "";
@@ -321,15 +349,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1720AF25E27A400026BEE4 /* WalletAssetView.swift in Sources */,
 				BCF2170625E1C7FC00D88066 /* Wallet.swift in Sources */,
 				BCF040DC25C07AA600D5A940 /* TabView.swift in Sources */,
+				BC1720C525E2AB770026BEE4 /* ChartView.swift in Sources */,
 				BCF040CA25C0602700D5A940 /* SpotPriceViewModel.swift in Sources */,
+				BC1720B525E281CC0026BEE4 /* WalletSpotAssetViewModel.swift in Sources */,
+				BC1720C825E2B3BB0026BEE4 /* ChartViewModel.swift in Sources */,
 				BC40F4E925C2F068009D4FA9 /* WalletView.swift in Sources */,
+				BC1720BB25E283250026BEE4 /* ErrorModel.swift in Sources */,
 				BC2EAD5E25BC8452004AB5D8 /* ContentView.swift in Sources */,
+				BC1720BE25E294150026BEE4 /* FiatSelectView.swift in Sources */,
 				BCF040C425C05E5500D5A940 /* SpotPriceModel.swift in Sources */,
+				BC1720B825E281FB0026BEE4 /* BalanceModel.swift in Sources */,
 				BCCF501325C455C300008B11 /* CurrencySelectView.swift in Sources */,
 				BCF040C125C0508C00D5A940 /* spotPricesView.swift in Sources */,
 				BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */,
+				BC1720B225E281970026BEE4 /* WalletSpotAssetView.swift in Sources */,
 				BCF040D925C0708A00D5A940 /* LottieView.swift in Sources */,
 				BC2EAD5C25BC8452004AB5D8 /* Dash_MonkeyApp.swift in Sources */,
 				BCF040D125C0654300D5A940 /* Globals.swift in Sources */,
@@ -472,10 +508,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.monkey.Dash-Monkey";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beauth.Dash-Monkey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,10 +531,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.monkey.Dash-Monkey";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beauth.Dash-Monkey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -526,6 +562,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BC1720C025E2AB1D0026BEE4 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/costachung/neumorphic/";
@@ -537,6 +581,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BC1720C125E2AB1D0026BEE4 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1720C025E2AB1D0026BEE4 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		BC2EAD7325BC8626004AB5D8 /* Neumorphic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BC2EAD7225BC8626004AB5D8 /* XCRemoteSwiftPackageReference "neumorphic" */;
