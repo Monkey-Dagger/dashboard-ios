@@ -106,23 +106,33 @@ struct TnxListViewElements: View {
     
     var body: some View {
         GeometryReader { geo in
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: threeRowGrid) {
-                    ForEach(txnVM.txns, id: \.self) { txn in
-                        Button(action: {
-                            self.showTxnDetails.toggle()
-                        }) {
-                            TnxViewElement(txn: txn, height: geo.size.height, width: geo.size.width)
-                                .padding(.horizontal)
-                        }.sheet(isPresented: $showTxnDetails) {
-                            TxnDetailView(txn: txn)
+            if txnVM.txns.isEmpty {
+                HStack {
+                    Spacer()
+                    ProgressView()
+                        .scaleEffect(x: 2, y: 2, anchor: .center)
+                    Spacer()
+                }
+                .padding(.top, geo.size.height * 0.25)
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: threeRowGrid) {
+                        ForEach(txnVM.txns, id: \.self) { txn in
+                            Button(action: {
+                                self.showTxnDetails.toggle()
+                            }) {
+                                TnxViewElement(txn: txn, height: geo.size.height, width: geo.size.width)
+                                    .padding(.horizontal)
+                            }.sheet(isPresented: $showTxnDetails) {
+                                TxnDetailView(txn: txn)
+                            }
                         }
                     }
                 }
             }
-            .onAppear {
-                txnVM.getAllBaseTxn(chainID: String(wallet.chainId), address: wallet.address, currency: "usd")
-            }
+        }
+        .onAppear {
+            txnVM.getAllBaseTxn(chainID: String(wallet.chainId), address: wallet.address, currency: "usd")
         }
     }
 }
