@@ -35,10 +35,27 @@ struct TnxListView: View {
                                         .font(.system(size: 22))
                                         
                                 }
-                                .frame(width: geo.size.height * 0.07, height: geo.size.height * 0.07)
+                                .frame(width: geo.size.height * 0.08, height: geo.size.height * 0.08)
                             }
                             
                             Spacer()
+                            
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(neuColor)
+                                    .blur(radius: 4)
+                                
+                                Circle()
+                                    .fill(LinearGradient(gradient: Gradient(colors: [neuDarkColor, neuLightColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                    .blur(radius: 2)
+
+                                Text("$")
+                                    .gradientForeground(colors: [Color(#colorLiteral(red: 1, green: 0.6853195493, blue: 0.5029885547, alpha: 1)), Color(#colorLiteral(red: 0.6673402371, green: 0.4177823495, blue: 0.216229177, alpha: 1))])
+                                    .font(.system(size: 22))
+                                    
+                            }
+                            .frame(width: geo.size.height * 0.08, height: geo.size.height * 0.08)
+                            
                         }
                         .padding(.top, geo.size.height * 0.09)
                         .padding(.horizontal, geo.size.width * 0.05)
@@ -49,12 +66,11 @@ struct TnxListView: View {
                                     .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
                                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                                     .padding(.leading, geo.size.width * 0.06)
-                                    .padding(.top)
                                 
                                 Spacer()
                             }
                             HStack {
-                                Text("please specify a fiat value, \nyou can also check transactions.")
+                                Text("tap on a card to see details \ntoken transfers not included.")
                                     .foregroundColor(Color(#colorLiteral(red: 0.4594413638, green: 0.4790457487, blue: 0.4829743505, alpha: 1)))
                                     .font(.system(size: 14, design: .monospaced))
                                     .fontWeight(.medium)
@@ -82,24 +98,26 @@ struct TnxListViewElements: View {
     
     var wallet: Wallet
     
+    @State var showTxnDetails = false
+    
     var tempData = [
         TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true, from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs",
                  from_address_label: "hjefsbuhfebs", to_address_label: "hjfbsehjbfes", amount: 12.5,
                  amount_in_quote: 12.4, gas_offered: 12.5, gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
         TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: false,
-                 from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
+                 from_address: "hvefiuhsvabifeytj6rjrdjyrjrydrys", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
+                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
+                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
+        TxnModel(block_signed_at: Date(), tx_hash: "jkghsdjydyjrdjryjrydefugfesui", tx_offset: 0, success: true,
+                 from_address: "hvefiuhjrydjdrdjrydjyrdjydsvabifes", to_address: "hjefsjdyrdjryjryddjryvbhuvefs", from_address_label: "hjefsbuhfebs",
                  to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
                  gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
         TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
+                 from_address: "hvefijrdjdrjrdjyruhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
                  to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
                  gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
         TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
-                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
-                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
+                 from_address: "hvefiuhsdjryjdrjdrydjryrjydvabifes", to_address: "hjefsdjrjryddjryjyrdjrydrdjyvbhuvefs", from_address_label: "hjefsbuhfebs",
                  to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
                  gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5)]
     
@@ -108,8 +126,14 @@ struct TnxListViewElements: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: threeRowGrid) {
                     ForEach(tempData) { txn in
-                        TnxViewElement(txn: txn, height: geo.size.height, width: geo.size.width)
-                            .padding(.leading)
+                        Button(action: {
+                            self.showTxnDetails.toggle()
+                        }) {
+                            TnxViewElement(txn: txn, height: geo.size.height, width: geo.size.width)
+                                .padding(.horizontal)
+                        }.sheet(isPresented: $showTxnDetails) {
+                            TxnDetailView(txn: txn)
+                        }
                     }
                 }
             }
@@ -157,22 +181,61 @@ struct TnxViewElement: View {
             }
             VStack {
                 HStack {
-                    Image(systemName: "arrow.triangle.swap")
-                        .gradientForeground(colors: [Color(#colorLiteral(red: 1, green: 0.6853195493, blue: 0.5029885547, alpha: 1)), Color(#colorLiteral(red: 0.6673402371, green: 0.4177823495, blue: 0.216229177, alpha: 1))])
-                        .font(.system(size: 16, weight: .semibold, design: .rounded))
-                        .padding(.leading)
-                        .padding(.top, height * 0.04)
+                    Text(txn.from_address!)
+                        .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
+                        .font(.system(size: 16, weight: .semibold, design: .monospaced))
+                        .padding(.leading, width * 0.05)
+                        .padding(.top, height * 0.05)
+                        .frame(width: width * 0.70, alignment: .leading)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
                     Spacer()
                 }
                 HStack {
-                    Text(txn.to_address_label!)
+                    Image(systemName: "arrow.triangle.swap")
+                        .gradientForeground(colors: [Color(#colorLiteral(red: 1, green: 0.6853195493, blue: 0.5029885547, alpha: 1)), Color(#colorLiteral(red: 0.6673402371, green: 0.4177823495, blue: 0.216229177, alpha: 1))])
+                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+                        .padding(.leading, width * 0.30)
+                    Spacer()
+                }
+                HStack {
+                    Text(txn.to_address!)
                         .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
                         .font(.system(size: 16, weight: .semibold, design: .monospaced))
-                        .padding(.leading)
-                        .padding(.top)
+                        .padding(.leading, width * 0.05)
+                        .frame(width: width * 0.70, alignment: .leading)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
                     Spacer()
                 }
                 Spacer()
+                
+                HStack {
+                    Spacer()
+                    ZStack {
+                        Rectangle()
+                            .fill(neuColor)
+                            .frame(width: width * 0.25, height: height * 0.06)
+                            .cornerRadius(width * 0.30)
+                        
+                        Text("Amount")
+                            .gradientForeground(colors: [Color(#colorLiteral(red: 0.7048456211, green: 0.6359616405, blue: 0.58123129, alpha: 1)), Color(#colorLiteral(red: 0.4021375775, green: 0.3603935838, blue: 0.3085331321, alpha: 1))])
+                            .font(.system(size: 12, weight: .semibold))
+                    }
+                    
+                    ZStack {
+                        Rectangle()
+                            .fill(neuColor)
+                            .frame(width: width * 0.33, height: height * 0.06)
+                            .cornerRadius(width * 0.30)
+                        
+                        Text("\(String(format: "%.2f", txn.amount_in_quote!))")
+                            .gradientForeground(colors: [Color(#colorLiteral(red: 0.7048456211, green: 0.6359616405, blue: 0.58123129, alpha: 1)), Color(#colorLiteral(red: 0.4021375775, green: 0.3603935838, blue: 0.3085331321, alpha: 1))])
+                            .font(.system(size: 12, weight: .semibold))
+                    }
+                    .padding(.trailing)
+                }
+                .padding(.bottom, height * 0.04)
             }
         }
     }

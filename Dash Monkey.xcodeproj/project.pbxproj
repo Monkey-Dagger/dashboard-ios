@@ -29,6 +29,7 @@
 		BC8ED70125EBC4E3004E4868 /* TxnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70025EBC4E3004E4868 /* TxnModel.swift */; };
 		BC8ED70425EBC52C004E4868 /* TxnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70325EBC52C004E4868 /* TxnViewModel.swift */; };
 		BC8ED70725EBC815004E4868 /* TnxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70625EBC815004E4868 /* TnxListView.swift */; };
+		BC8ED70A25EBF19E004E4868 /* TxnDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70925EBF19E004E4868 /* TxnDetailView.swift */; };
 		BCCF501325C455C300008B11 /* CurrencySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF501225C455C300008B11 /* CurrencySelectView.swift */; };
 		BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040BB25BF5A9D00D5A940 /* HomeView.swift */; };
 		BCF040C125C0508C00D5A940 /* spotPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040C025C0508C00D5A940 /* spotPricesView.swift */; };
@@ -70,6 +71,7 @@
 		BC8ED70025EBC4E3004E4868 /* TxnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxnModel.swift; sourceTree = "<group>"; };
 		BC8ED70325EBC52C004E4868 /* TxnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxnViewModel.swift; sourceTree = "<group>"; };
 		BC8ED70625EBC815004E4868 /* TnxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TnxListView.swift; sourceTree = "<group>"; };
+		BC8ED70925EBF19E004E4868 /* TxnDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxnDetailView.swift; sourceTree = "<group>"; };
 		BCCF501225C455C300008B11 /* CurrencySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectView.swift; sourceTree = "<group>"; };
 		BCF040BB25BF5A9D00D5A940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BCF040C025C0508C00D5A940 /* spotPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotPricesView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				BC1720AE25E27A400026BEE4 /* WalletAssetView.swift */,
 				BCFDEE6725C878E700CACCED /* AddAddressView.swift */,
 				BC8ED70625EBC815004E4868 /* TnxListView.swift */,
+				BC8ED70925EBF19E004E4868 /* TxnDetailView.swift */,
 				BC1720B125E281970026BEE4 /* WalletSpotAssetView.swift */,
 			);
 			path = Views;
@@ -380,6 +383,7 @@
 				BC1720B225E281970026BEE4 /* WalletSpotAssetView.swift in Sources */,
 				BCF040D925C0708A00D5A940 /* LottieView.swift in Sources */,
 				BC2EAD5C25BC8452004AB5D8 /* Dash_MonkeyApp.swift in Sources */,
+				BC8ED70A25EBF19E004E4868 /* TxnDetailView.swift in Sources */,
 				BCF040D125C0654300D5A940 /* Globals.swift in Sources */,
 				BCFDEE6825C878E700CACCED /* AddAddressView.swift in Sources */,
 			);
