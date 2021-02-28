@@ -12,7 +12,7 @@ struct WalletView: View {
     
     @State var showAddWallet = false
     
-    @State var addresses: [Wallet] = []
+    @State var addresses: [Wallet] = [Wallet(name: "demo", address: "demo.eth", chainId: 1)]
         
     var body: some View {
         NavigationView {

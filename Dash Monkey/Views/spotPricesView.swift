@@ -21,16 +21,26 @@ struct spotPricesView: View {
     
     var body: some View {
         GeometryReader { geo in
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: threeRowGrid ) {
-                    ForEach(spotPriceVM.spotTokens, id: \.self) { token in
-                        Button(action: {
-                            showChart = true
-                        }){
-                            PriceView(token: token, height: geo.size.height, width: geo.size.width)
-                        }
-                        .sheet(isPresented: $showChart) {
-                            ChartView(data: [0.00])
+            if spotPriceVM.spotTokens.isEmpty {
+                HStack {
+                    Spacer()
+                    ProgressView()
+                        .scaleEffect(x: 2, y: 2, anchor: .center)
+                    Spacer()
+                }
+                .padding(.top, geo.size.height * 0.25)
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: threeRowGrid ) {
+                        ForEach(spotPriceVM.spotTokens, id: \.self) { token in
+                            Button(action: {
+                                showChart = true
+                            }){
+                                PriceView(token: token, height: geo.size.height, width: geo.size.width)
+                            }
+                            .sheet(isPresented: $showChart) {
+                                ChartView(data: [0.00])
+                            }
                         }
                     }
                 }

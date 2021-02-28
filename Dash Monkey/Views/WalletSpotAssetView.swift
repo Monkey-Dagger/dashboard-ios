@@ -21,18 +21,29 @@ struct WalletSpotAssetView: View {
     
     var body: some View {
         GeometryReader { geo in
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: threeRowGrid ) {
-                    ForEach(walletSpotAssetVM.balances, id: \.self) { token in
-                        if token.quote_rate != 0 && token.amount != 0 {
-                            BalanceView(token: token, height: geo.size.height, width: geo.size.width)
+            if walletSpotAssetVM.balances.isEmpty {
+                HStack {
+                    Spacer()
+                    ProgressView()
+                        .scaleEffect(x: 2, y: 2, anchor: .center)
+                    Spacer()
+                }
+                .padding(.top, geo.size.height * 0.25)
+                
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: threeRowGrid ) {
+                        ForEach(walletSpotAssetVM.balances, id: \.self) { token in
+                            if token.quote_rate != 0 && token.amount != 0 {
+                                BalanceView(token: token, height: geo.size.height, width: geo.size.width)
+                            }
                         }
                     }
                 }
             }
-            .onAppear {
-                walletSpotAssetVM.getAddressBalance(chainID: "\(wallet.chainId)", address: wallet.address, currency: fiat)
-            }
+        }
+        .onAppear {
+            walletSpotAssetVM.getAddressBalance(chainID: "\(wallet.chainId)", address: wallet.address, currency: fiat)
         }
     }
 }
