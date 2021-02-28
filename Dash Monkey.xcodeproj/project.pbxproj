@@ -26,6 +26,8 @@
 		BC40F4E925C2F068009D4FA9 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC40F4E825C2F068009D4FA9 /* WalletView.swift */; };
 		BC7CDEDD25C086D500D47C59 /* monkeyTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7CDEDC25C086D500D47C59 /* monkeyTwo.json */; };
 		BC7CDEE025C087D400D47C59 /* monkeyThree.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7CDEDF25C087D400D47C59 /* monkeyThree.json */; };
+		BC8ED70125EBC4E3004E4868 /* TxnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70025EBC4E3004E4868 /* TxnModel.swift */; };
+		BC8ED70425EBC52C004E4868 /* TxnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ED70325EBC52C004E4868 /* TxnViewModel.swift */; };
 		BCCF501325C455C300008B11 /* CurrencySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF501225C455C300008B11 /* CurrencySelectView.swift */; };
 		BCF040BC25BF5A9D00D5A940 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040BB25BF5A9D00D5A940 /* HomeView.swift */; };
 		BCF040C125C0508C00D5A940 /* spotPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF040C025C0508C00D5A940 /* spotPricesView.swift */; };
@@ -64,6 +66,8 @@
 		BC40F4E825C2F068009D4FA9 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		BC7CDEDC25C086D500D47C59 /* monkeyTwo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkeyTwo.json; sourceTree = "<group>"; };
 		BC7CDEDF25C087D400D47C59 /* monkeyThree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkeyThree.json; sourceTree = "<group>"; };
+		BC8ED70025EBC4E3004E4868 /* TxnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxnModel.swift; sourceTree = "<group>"; };
+		BC8ED70325EBC52C004E4868 /* TxnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxnViewModel.swift; sourceTree = "<group>"; };
 		BCCF501225C455C300008B11 /* CurrencySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectView.swift; sourceTree = "<group>"; };
 		BCF040BB25BF5A9D00D5A940 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BCF040C025C0508C00D5A940 /* spotPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotPricesView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				BCF2170525E1C7FC00D88066 /* Wallet.swift */,
 				BC1720B725E281FB0026BEE4 /* BalanceModel.swift */,
 				BC1720BA25E283250026BEE4 /* ErrorModel.swift */,
+				BC8ED70025EBC4E3004E4868 /* TxnModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				BCF040C925C0602700D5A940 /* SpotPriceViewModel.swift */,
 				BC1720B425E281CC0026BEE4 /* WalletSpotAssetViewModel.swift */,
 				BC1720C725E2B3BB0026BEE4 /* ChartViewModel.swift */,
+				BC8ED70325EBC52C004E4868 /* TxnViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -351,10 +357,12 @@
 			files = (
 				BC1720AF25E27A400026BEE4 /* WalletAssetView.swift in Sources */,
 				BCF2170625E1C7FC00D88066 /* Wallet.swift in Sources */,
+				BC8ED70425EBC52C004E4868 /* TxnViewModel.swift in Sources */,
 				BCF040DC25C07AA600D5A940 /* TabView.swift in Sources */,
 				BC1720C525E2AB770026BEE4 /* ChartView.swift in Sources */,
 				BCF040CA25C0602700D5A940 /* SpotPriceViewModel.swift in Sources */,
 				BC1720B525E281CC0026BEE4 /* WalletSpotAssetViewModel.swift in Sources */,
+				BC8ED70125EBC4E3004E4868 /* TxnModel.swift in Sources */,
 				BC1720C825E2B3BB0026BEE4 /* ChartViewModel.swift in Sources */,
 				BC40F4E925C2F068009D4FA9 /* WalletView.swift in Sources */,
 				BC1720BB25E283250026BEE4 /* ErrorModel.swift in Sources */,
