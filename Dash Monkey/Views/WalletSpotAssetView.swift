@@ -90,7 +90,7 @@ struct BalanceView: View {
                 
                 VStack {
                     HStack {
-                        Text("\(String(format: "%.2f", token.quote_rate!  * token.amount!))")
+                        Text("\(String(format: "%.8f", token.amount!))")
                             .gradientForeground(colors: [Color(#colorLiteral(red: 1, green: 0.6853195493, blue: 0.5029885547, alpha: 1)), Color(#colorLiteral(red: 0.6673402371, green: 0.4177823495, blue: 0.216229177, alpha: 1))])
                             .font(.system(size: 18, weight: .semibold))
                             .padding(.leading, width * 0.04)
@@ -108,7 +108,7 @@ struct BalanceView: View {
                                 .frame(width: width * 0.25, height: height * 0.06)
                                 .cornerRadius(width * 0.30)
                             
-                            Text("Balance")
+                            Text("Value")
                                 .gradientForeground(colors: [Color(#colorLiteral(red: 0.7048456211, green: 0.6359616405, blue: 0.58123129, alpha: 1)), Color(#colorLiteral(red: 0.4021375775, green: 0.3603935838, blue: 0.3085331321, alpha: 1))])
                                 .font(.system(size: 12, weight: .semibold))
                         }
@@ -119,7 +119,7 @@ struct BalanceView: View {
                                 .frame(width: width * 0.33, height: height * 0.06)
                                 .cornerRadius(width * 0.30)
                             
-                            Text("\(token.amount!)")
+                            Text("\(String(format: "%.5f", token.amount!))")
                                 .gradientForeground(colors: [Color(#colorLiteral(red: 0.7048456211, green: 0.6359616405, blue: 0.58123129, alpha: 1)), Color(#colorLiteral(red: 0.4021375775, green: 0.3603935838, blue: 0.3085331321, alpha: 1))])
                                 .font(.system(size: 12, weight: .semibold))
                         }

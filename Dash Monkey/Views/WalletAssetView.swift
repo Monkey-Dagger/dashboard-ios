@@ -92,7 +92,7 @@ struct WalletAssetView: View {
                     
                     VStack {
                         HStack {
-                            Text("your balance,")
+                            Text("balance for address,")
                                 .gradientForeground(colors: [Color(#colorLiteral(red: 0.786473326, green: 0.7942601906, blue: 0.7942601906, alpha: 1)), Color(#colorLiteral(red: 0.4924296141, green: 0.5023575425, blue: 0.4977371097, alpha: 1))])
                                 .font(.system(size: 18, weight: .bold, design: .monospaced))
                                 .padding(.leading, geo.size.width * 0.06)
@@ -101,7 +101,7 @@ struct WalletAssetView: View {
                             Spacer()
                         }
                         HStack {
-                            Text("please specify a fiat value, \nyou can also check transactions.")
+                            Text("\(wallet.address)")
                                 .foregroundColor(Color(#colorLiteral(red: 0.4594413638, green: 0.4790457487, blue: 0.4829743505, alpha: 1)))
                                 .font(.system(size: 14, design: .monospaced))
                                 .fontWeight(.medium)
