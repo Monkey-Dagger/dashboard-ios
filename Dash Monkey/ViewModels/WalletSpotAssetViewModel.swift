@@ -34,7 +34,8 @@ class WalletSpotAssetViewModel: ObservableObject {
                             token.logo_url = item["logo_url"] as? String ?? ""
                             token.quote_rate = item["quote_rate"] as? Double ?? 0.0
                             token.amount = item["quote"] as? Double ?? 0.0
-
+                            token.balance = Double(item["balance"] as? String ?? "0")
+                            token.balance! /= pow(10, Double(item["contract_decimals"] as? Int ?? 0))
                             balances.append(token)
                         }
                     }

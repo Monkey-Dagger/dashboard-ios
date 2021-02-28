@@ -18,4 +18,5 @@ struct BalanceModel: Codable, Hashable, Identifiable {
     var logo_url: String?
     var quote_rate: Double?
     var amount: Double?
+    var balance: Double?
 }

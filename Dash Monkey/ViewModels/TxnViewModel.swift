@@ -51,9 +51,10 @@ class TxnViewModel: ObservableObject {
                 txn.from_address_label = item["from_address_label"] as? String
                 txn.to_address_label = item["to_address_label"] as? String
                 
-                txn.amount = item["value"] as? Double // todo convert wETH to ETH ;; response is String, `as Double` ok?
+                txn.amount = Double(item["value"] as? String ?? "0")
+                txn.amount! /= pow(10, 18) // hard coded oh no
                 txn.amount_in_quote = item["value_quote"] as? Double
-                
+
                 // gas stuff
                 txn.gas_offered = item["gas_offered"] as? Double
                 txn.gas_price = item["gas_price"] as? Double
@@ -124,7 +125,8 @@ class TxnViewModel: ObservableObject {
                     txn.contract_in_quote = transfers[0]["quote_rate"] as? Double
                     txn.contract_decimals = transfers[0]["contract_decimals"] as? Int
                     
-                    txn.amount = transfers[0]["delta"] as? Double // todo :: divide by contract decimals ;; response is String, `as Double` ok?
+                    txn.amount = Double(transfers[0]["delta"] as? String ?? "0")
+                    txn.amount! /= pow(10, Double(transfers[0]["contract_decimals"] as? Int ?? 0))
                     txn.amount_in_quote = transfers[0]["delta_quote"] as? Double
                     
                     txns.append(txn)
