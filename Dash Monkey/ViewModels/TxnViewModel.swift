@@ -110,29 +110,31 @@ class TxnViewModel: ObservableObject {
                 txn.tx_offset = item["tx_offset"] as? Int
                 txn.success = item["successful"] as? Bool
                 
-                let transfers = item["transfers"] as! [[String:Any]]
-                if transfers.count > 1 { // DNU :: fixed with xcode
-                    print("multiple transfers in same block; currently unsuported")
-                    continue
+                if let transfers = item["transfers"] as? [[String:Any]] {
+                    if transfers.count > 1 {
+                        print("multiple transfers in same block; currently unsuported")
+                        continue
+                    }
+                    // else transfer info
+                    txn.from_address = transfers[0]["from_address"] as? String
+                    txn.to_address = transfers[0]["to_address"] as? String
+                    txn.from_address_label = transfers[0]["from_address_label"] as? String ?? ""
+                    txn.to_address_label = transfers[0]["to_address_label"] as? String ?? ""
+                    
+                    txn.contract_in_quote = transfers[0]["quote_rate"] as? Double
+                    txn.contract_decimals = transfers[0]["contract_decimals"] as? Int
+                    
+                    txn.amount = transfers[0]["delta"] as? Double // todo :: divide by contract decimals ;; response is String, `as Double` ok?
+                    txn.amount_in_quote = transfers[0]["delta_quote"] as? Double
+                    
+                    txns.append(txn)
+                } else {
+                    print("no transfers associated with this hash - \(item["tx_hash"] ?? "idk-man-no-hash-also")")
                 }
-                
-                // else transfer info
-                txn.from_address = transfers[0]["from_address"] as? String
-                txn.to_address = transfers[0]["to_address"] as? String
-                txn.from_address_label = transfers[0]["from_address_label"] as? String ?? ""
-                txn.to_address_label = transfers[0]["to_address_label"] as? String ?? ""
-                
-                txn.contract_in_quote = transfers[0]["quote_rate"] as? Double
-                txn.contract_decimals = transfers[0]["contract_decimals"] as? Int
-                
-                txn.amount = transfers[0]["delta"] as? Double // todo :: divide by contract decimals ;; response is String, `as Double` ok?
-                txn.amount_in_quote = transfers[0]["delta_quote"] as? Double
-                
-                txns.append(txn)
               }
             }
           } else { // if json["data"] == null
-            print("Error retriving balances - \(json)")
+            print("Error retriving trasnfers - \(json)")
           }
         }
         self.txns.append(contentsOf: txns)
