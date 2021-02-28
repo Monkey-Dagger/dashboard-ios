@@ -12,6 +12,8 @@ struct TnxListView: View {
     
     var wallet: Wallet
     
+    @ObservedObject var txnVM: TxnViewModel
+    
     var body: some View {
         GeometryReader { geo in
                 ZStack {
@@ -80,7 +82,7 @@ struct TnxListView: View {
                             }
                         }
                         
-                        TnxListViewElements(wallet: wallet)
+                        TnxListViewElements(wallet: wallet, txnVM: txnVM)
                     }
                 }
                 .navigationTitle("")
@@ -100,32 +102,13 @@ struct TnxListViewElements: View {
     
     @State var showTxnDetails = false
     
-    var tempData = [
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true, from_address: "hvefiuhsvabifes", to_address: "hjefsvbhuvefs",
-                 from_address_label: "hjefsbuhfebs", to_address_label: "hjfbsehjbfes", amount: 12.5,
-                 amount_in_quote: 12.4, gas_offered: 12.5, gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: false,
-                 from_address: "hvefiuhsvabifeytj6rjrdjyrjrydrys", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
-                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
-                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsdjydyjrdjryjrydefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefiuhjrydjdrdjrydjyrdjydsvabifes", to_address: "hjefsjdyrdjryjryddjryvbhuvefs", from_address_label: "hjefsbuhfebs",
-                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
-                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefijrdjdrjrdjyruhsvabifes", to_address: "hjefsvbhuvefs", from_address_label: "hjefsbuhfebs",
-                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
-                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5),
-        TxnModel(block_signed_at: Date(), tx_hash: "jkghsefugfesui", tx_offset: 0, success: true,
-                 from_address: "hvefiuhsdjryjdrjdrydjryrjydvabifes", to_address: "hjefsdjrjryddjryjyrdjrydrdjyvbhuvefs", from_address_label: "hjefsbuhfebs",
-                 to_address_label: "hjfbsehjbfes", amount: 12.5, amount_in_quote: 12.4, gas_offered: 12.5,
-                 gas_price: 12.5, gas_spent: 12.6, gas_spent_quote: 18.5, gas_rate_quote: 13.5)]
+    @ObservedObject var txnVM: TxnViewModel
     
     var body: some View {
         GeometryReader { geo in
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: threeRowGrid) {
-                    ForEach(tempData) { txn in
+                    ForEach(txnVM.txns, id: \.self) { txn in
                         Button(action: {
                             self.showTxnDetails.toggle()
                         }) {
@@ -136,6 +119,9 @@ struct TnxListViewElements: View {
                         }
                     }
                 }
+            }
+            .onAppear {
+                txnVM.getAllBaseTxn(chainID: String(wallet.chainId), address: wallet.address, currency: "usd")
             }
         }
     }
