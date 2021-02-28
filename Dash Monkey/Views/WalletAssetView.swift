@@ -14,6 +14,8 @@ struct WalletAssetView: View {
     @State var selectedFiat = 0
     @State var showFiatSelectView = false
     
+    @ObservedObject var txnVM = TxnViewModel()
+    
     @State var fiatValue = "usd"
     
     var wallet: Wallet
@@ -46,7 +48,7 @@ struct WalletAssetView: View {
                         
                         Spacer()
                         
-                        NavigationLink(destination: TnxListView(wallet: wallet)) {
+                        NavigationLink(destination: TnxListView(wallet: wallet, txnVM: txnVM)) {
                             ZStack {
                                 Circle()
                                     .foregroundColor(neuColor)

@@ -12,13 +12,15 @@ class TxnViewModel: ObservableObject {
     @Published var txns = [TxnModel]()
     
     func getAllBaseTxn(chainID:String, address:String, currency:String) {
-      let url:String = covalentAPI + "/v1/" + chainID + "/address/" + address + "/transactions_v2/"
-
+        let url:String = covalentAPI + "/v1/" + chainID + "/address/" + address + "/transactions_v2/"
+        
       let params:[String:Any] = [
         "key": covalentAPIKey,
         "quote-currency": currency.lowercased(),
         "no-logs": true
       ]
+        
+        print("I am called!")
 
       let req = AF.request(
         url,
@@ -27,16 +29,27 @@ class TxnViewModel: ObservableObject {
       )
 
       req.responseJSON { res in
+
         var txns: [TxnModel] = []
         if let json = res.value as? [String:Any] {
+
           if let data = json["data"] as? [String:Any] {
+
             if let items = data["items"] as? [[String:Any]] {
+
                 let dateformatter = DateFormatter()
                 dateformatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
               for item in items {
-                if item["to_address"] as? String != address {
-                    continue
-                }
+//                if item["to_address"] as? String != address || item["from_address"] as? String != address { // Do this something
+//                    print(5)
+//                    continue
+//                }
+//                
+//                if item["value_quote"] as? Double == 0 {
+//                    print(5)
+//                    continue
+//                }
+                
                 // else
                 var txn = TxnModel()
                 
@@ -62,6 +75,8 @@ class TxnViewModel: ObservableObject {
                 txn.gas_rate_quote = item["value_quote"] as? Double
 
                 txns.append(txn)
+                print(txns.count)
+
               }
             }
           } else { // if json["data"] == null
