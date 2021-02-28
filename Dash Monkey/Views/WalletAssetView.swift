@@ -101,7 +101,7 @@ struct WalletAssetView: View {
                             Spacer()
                         }
                         HStack {
-                            Text("\(wallet.address)")
+                            Text("\(wallet.name) (\(wallet.address))")
                                 .foregroundColor(Color(#colorLiteral(red: 0.4594413638, green: 0.4790457487, blue: 0.4829743505, alpha: 1)))
                                 .font(.system(size: 14, design: .monospaced))
                                 .fontWeight(.medium)
